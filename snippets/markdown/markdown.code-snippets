@@ -1,0 +1,37 @@
+{
+  "Markdown link": {
+    "prefix": "mdLink",
+    "body": ["[${1:link text}](${2:url})${0}"],
+    "description": "Markdown link"
+  },
+  "Markdown link with title": {
+    "prefix": "mdLinkWithTitle",
+    "body": ["[${1:link text}](${2:url} \"${3:title}\")${0}"],
+    "description": "Markdown link with title"
+  },
+  "Markdown image": {
+    "prefix": "mdImage",
+    "body": ["![${1:alt}](${2:path})${0}"],
+    "description": "Markdown image"
+  },
+  "Markdown image with title": {
+    "prefix": "mdImageWithTitle",
+    "body": ["![${1:alt}](${2:path} \"${3:title}\")${0}"],
+    "description": "Markdown image with title"
+  },
+  "Markdown linked image": {
+    "prefix": "mdLinkedImage",
+    "body": ["[![${1:alt}](${2:path})](${3:url})${0}"],
+    "description": "Markdown linked image"
+  },
+  "Markdown linked image with title": {
+    "prefix": "mdLinkedImageWithTitle",
+    "body": ["[![${1:alt}](${2:path} \"${3:title}\")](${4:url})${0}"],
+    "description": "Markdown linked image with title"
+  },
+  "Markdown code block": {
+    "prefix": "mdCode",
+    "body": ["```${1:enter type}", "${2:enter code}", "```${0}"],
+    "description": "Markdown code block"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "vscode-snippets",
+  "displayName": "Snippets for Next.js, React in TypeScript",
+  "version": "0.0.1",
+  "description": "Snippets for the development with Next.js, React in a TypeScript environment.",
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "images/logo.png",
+  "homepage": "https://github.com/mheob/vscode-snippets#readme",
+  "bugs": {
+    "url": "https://github.com/mheob/vscode-snippets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mheob/vscode-snippets.git"
+  },
+  "license": "MIT",
+  "publisher": "mheob",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/markdown/markdown.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/javascript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/javascript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact/react.code-snippets"
+      }
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "engines": {
+    "vscode": "^1.59.0"
+  }
+}
