@@ -1,10 +1,17 @@
 {
   "name": "vscode-snippets",
   "displayName": "Snippets for Next.js, React in TypeScript",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Snippets for the development with Next.js, React in a TypeScript environment.",
   "categories": [
     "Snippets"
+  ],
+  "keywords": [
+    "next.js",
+    "javascript",
+    "react",
+    "snippets",
+    "typescript"
   ],
   "homepage": "https://github.com/mheob/vscode-snippets#readme",
   "bugs": {
@@ -20,6 +27,8 @@
     "vscode:prepublish": "npm run build",
     "prebuild": "npm run clean",
     "build": "ts-node scripts/generate-snippet-files.ts",
+    "predeploy": "npm run build",
+    "deploy": "vsce publish",
     "lint": "eslint --ext ts",
     "clean": "rimraf snippets"
   },
@@ -61,7 +70,8 @@
     "prettier-plugin-jsdoc": "^0.3.23",
     "rimraf": "^3.0.2",
     "ts-node": "^10.2.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "vsce": "^1.96.1"
   },
   "engines": {
     "vscode": "^1.59.0"

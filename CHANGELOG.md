@@ -4,16 +4,13 @@
 
 -
 
-## [0.0.1] - 2021-08-23
+## [1.0.0] - 2021-08-24
 
 ### Added
 
-- This CHANGELOG file.
-- Several configurations and helper like `prettier` and `editorconfig`
-- General snippets for the markdown language.
-
-[unreleased]: https://github.com/mheob/vscode-snippets/compare/v0.0.1...HEAD
+- First running state with some snippets
 
 <!-- [0.0.2]: https://github.com/mheob/vscode-snippets/compare/v0.0.1...v0.0.2 -->
 
-[0.0.1]: https://github.com/mheob/vscode-snippets/releases/tag/v0.0.1
+[unreleased]: https://github.com/mheob/vscode-snippets/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/mheob/vscode-snippets/releases/tag/v1.0.0
