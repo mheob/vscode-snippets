@@ -8,7 +8,8 @@
 
 ### Added
 
-- First running state with some snippets
+- First running state with some snippets [[#1](https://github.com/mheob/vscode-snippets/pull/1)]
+  [[#2](https://github.com/mheob/vscode-snippets/pull/2)]
 
 <!-- [0.0.2]: https://github.com/mheob/vscode-snippets/compare/v0.0.1...v0.0.2 -->
 
