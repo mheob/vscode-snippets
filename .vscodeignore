@@ -1,4 +1,11 @@
 .vscode/**
 .vscode-test/**
+node_modules/**
+scripts/**
+src
+.editorconfig
+.eslintrc.json
 .gitignore
-vsc-extension-quickstart.md
+.prettierrc.json
+package*.json
+tsconfig.json

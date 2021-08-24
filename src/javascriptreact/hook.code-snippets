@@ -1,0 +1,47 @@
+{
+  "useCallback hook": {
+    "prefix": "useCallback",
+    "body": ["useCallback$0(() => {", "\t${1:callback}", "}, [${2:input}])"],
+    "description": "useCallback hook"
+  },
+  "useContext hook": {
+    "prefix": "useContext",
+    "body": ["const ${1:context} = useContext$0(${2:contextValue})"],
+    "description": "useContext hook"
+  },
+  "useEffect hook": {
+    "prefix": "useEffect",
+    "body": ["useEffect$0(() => {", "\t${1:effect}", "}, [${2:dependencies}])"],
+    "description": "useEffect hook"
+  },
+  "useMemo hook": {
+    "prefix": "useMemo",
+    "body": ["useMemo$0(() => ${1:function}, ${2:input})"],
+    "description": "useMemo hook"
+  },
+  "useReducer hook": {
+    "prefix": "useReducer",
+    "body": ["const [state, dispatch] = useReducer$0(${1:reducer}, ${2:initialState}, ${3:init})"],
+    "description": "useReducer hook"
+  },
+  "useRef hook": {
+    "prefix": "useRef",
+    "body": ["const ${1:ref} = useRef$0(${2:initialValue})"],
+    "description": "useRef hook"
+  },
+  "useRouter hook": {
+    "prefix": "useRouter",
+    "body": ["const router = useRouter$0()"],
+    "description": "useRouter hook"
+  },
+  "useState hook": {
+    "prefix": "useState",
+    "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$0(${2:initialState})",
+    "description": "useState hook"
+  },
+  "useTranslation hook": {
+    "prefix": "useTranslation",
+    "body": "const { t } = useTranslation$0('${1}')",
+    "description": "useTranslation hook"
+  }
+}
