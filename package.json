@@ -1,12 +1,18 @@
 {
   "name": "vscode-snippets",
   "displayName": "Snippets for Next.js, React in TypeScript",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Snippets for the development with Next.js, React in a TypeScript environment.",
   "categories": [
     "Snippets"
   ],
-  "icon": "images/logo.png",
+  "keywords": [
+    "next.js",
+    "javascript",
+    "react",
+    "snippets",
+    "typescript"
+  ],
   "homepage": "https://github.com/mheob/vscode-snippets#readme",
   "bugs": {
     "url": "https://github.com/mheob/vscode-snippets/issues"
@@ -17,30 +23,70 @@
   },
   "license": "MIT",
   "publisher": "mheob",
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "ts-node scripts/generate-snippet-files.ts",
+    "predeploy": "npm run build",
+    "deploy": "vsce publish",
+    "lint": "eslint --ext ts",
+    "clean": "rimraf snippets"
+  },
   "contributes": {
     "snippets": [
       {
         "language": "markdown",
-        "path": "./snippets/markdown/markdown.code-snippets"
+        "path": "snippets/markdown.json"
+      },
+      {
+        "language": "javascript",
+        "path": "snippets/javascript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/react/javascript.code-snippets"
+        "path": "snippets/javascriptreact.json"
+      },
+      {
+        "language": "typescript",
+        "path": "snippets/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/react/javascript.code-snippets"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/typescriptreact/react.code-snippets"
+        "path": "snippets/typescriptreact.json"
       }
     ]
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "@types/node": "16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-unicorn": "^35.0.0",
+    "import-sort": "^6.0.0",
+    "import-sort-parser-typescript": "^6.0.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-jsdoc": "^0.3.23",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5",
+    "vsce": "^1.96.1"
   },
   "engines": {
     "vscode": "^1.59.0"
+  },
+  "icon": "images/logo.png",
+  "importSort": {
+    ".js, .jsx, .es6, .es": {
+      "parser": "babylon",
+      "style": "module",
+      "options": {}
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "module",
+      "options": {}
+    }
   }
 }

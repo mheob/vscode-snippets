@@ -1,0 +1,12 @@
+{
+  "forIn": {
+    "prefix": "forIn",
+    "body": ["for(const ${1:item} in ${2:object}) {", "\t$0", "}", ""],
+    "description": "Iterating over property values of iterable objects"
+  },
+  "forOf": {
+    "prefix": "forOf",
+    "body": ["for(const ${1:item} of ${2:object}) {", "\t$0", "}", ""],
+    "description": "Iterating over property names of iterable objects"
+  }
+}

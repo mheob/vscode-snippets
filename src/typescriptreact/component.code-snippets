@@ -1,0 +1,18 @@
+{
+  "React functional component": {
+    "prefix": "rfc",
+    "body": [
+      "type ${TM_FILENAME_BASE}Props = {${1:propertyTypes}}",
+      "",
+      "export const ${TM_FILENAME_BASE} = ({ properties }: ${TM_FILENAME_BASE}Props) => {",
+      "\treturn (",
+      "\t\t<div>$0</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      ""
+    ],
+    "description": "React functional component"
+  }
+}
