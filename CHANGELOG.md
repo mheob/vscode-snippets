@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
--
+- Add the markdown snippets to the readme [[#6](https://github.com/mheob/vscode-snippets/pull/6)]
 
 ## [1.0.1] - 2021-08-24
 
