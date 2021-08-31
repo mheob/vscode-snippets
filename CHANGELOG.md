@@ -8,7 +8,6 @@
 
 - Add return type and remove extra default export from React Function Component and update all
   dependencies [[#8](https://github.com/mheob/vscode-snippets/pull/8)]
-- Bump @types/node from 16.7.1 to 16.7.2 [[#7](https://github.com/mheob/vscode-snippets/pull/7)]
 - Add the markdown snippets to the readme [[#6](https://github.com/mheob/vscode-snippets/pull/6)]
 
 ## [1.0.1] - 2021-08-24
@@ -25,5 +24,6 @@
   [[#2](https://github.com/mheob/vscode-snippets/pull/2)]
 
 [unreleased]: https://github.com/mheob/vscode-snippets/compare/v1.0.1...HEAD
+[1.0.2]: https://github.com/mheob/vscode-snippets/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/mheob/vscode-snippets/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/mheob/vscode-snippets/releases/tag/v1.0.0
