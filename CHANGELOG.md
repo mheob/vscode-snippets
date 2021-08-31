@@ -6,7 +6,9 @@
 
 ## [1.0.2] - 2021-08-31
 
-- Add return type and remove extra default export from React Function Component and update all
+### Added
+
+- Add Return type and remove extra default export from React Function Component and update all
   dependencies [[#8](https://github.com/mheob/vscode-snippets/pull/8)]
 - Add the markdown snippets to the readme [[#6](https://github.com/mheob/vscode-snippets/pull/6)]
 
