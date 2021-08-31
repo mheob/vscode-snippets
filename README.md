@@ -84,7 +84,7 @@ Only for languages: `.tsx`
 ```.tsx
 type MyDynamicComponentNameProps = { … }
 
-export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps) => {
+export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps): JSX.Element => {
   return (
     <div>$0</div>
   )
