@@ -4,13 +4,11 @@
     "body": [
       "type ${TM_FILENAME_BASE}Props = {${1:propertyTypes}}",
       "",
-      "export const ${TM_FILENAME_BASE} = ({ properties }: ${TM_FILENAME_BASE}Props) => {",
+      "export default function ${TM_FILENAME_BASE}({ properties }: ${TM_FILENAME_BASE}Props): JSX.Element {",
       "\treturn (",
       "\t\t<div>$0</div>",
       "\t)",
       "}",
-      "",
-      "export default ${TM_FILENAME_BASE}",
       ""
     ],
     "description": "React functional component"
