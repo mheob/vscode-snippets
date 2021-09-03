@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Nothing
+
+## [1.1.0] - 2021-09-03
+
 ### Added
 
 - Add `getServerSideProps`, `getStaticPaths` and `getStaticProps` snippets
@@ -38,7 +42,8 @@
 - First running state with some snippets [[#1](https://github.com/mheob/vscode-snippets/pull/1)]
   [[#2](https://github.com/mheob/vscode-snippets/pull/2)]
 
-[unreleased]: https://github.com/mheob/vscode-snippets/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/mheob/vscode-snippets/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/mheob/vscode-snippets/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/mheob/vscode-snippets/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/mheob/vscode-snippets/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/mheob/vscode-snippets/releases/tag/v1.0.0
