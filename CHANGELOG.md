@@ -2,13 +2,20 @@
 
 ## [Unreleased]
 
+### Added
+
+- Add `getServerSideProps`, `getStaticPaths` and `getStaticProps` snippets
+  [[#14](https://github.com/mheob/vscode-snippets/pull/14)]
+
 ### Changed
 
 - Use json as file extension for the source snippets files
+  [[#13](https://github.com/mheob/vscode-snippets/pull/13)]
 
 ### Fixed
 
 - Add missing return type to the React Function Component in the readme
+  [[#11](https://github.com/mheob/vscode-snippets/pull/11)]
 
 ## [1.0.2] - 2021-08-31
 

@@ -17,6 +17,86 @@ environment in [VS Code](https://code.visualstudio.com/).
 
 ## Snippets List for JS/TS
 
+### Components
+
+#### `rfc⇥`
+
+Creates a React Functional Component
+
+Only for languages: `.tsx`
+
+```tsx
+type MyDynamicComponentNameProps = { … }
+
+export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps): JSX.Element => {
+  return (
+    <div>$0</div>
+  )
+}
+
+export default MyDynamicComponentName
+```
+
+#### `getServerSideProps⇥`
+
+Adds the `getServerSideProps` function
+
+Only for languages: `.tsx`
+
+```tsx
+export const getServerSideProps: GetServerSideProps<…> = async (context) => {
+  const data: … = {};
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {
+      ...data,
+    },
+  };
+};
+```
+
+#### `getStaticPaths⇥`
+
+Adds the `getStaticPaths` function
+
+Only for languages: `.tsx`
+
+```tsx
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [
+      {
+        params: {},
+      },
+    ],
+  };
+};
+```
+
+#### `getStaticProps⇥`
+
+Adds the `getStaticProps` function
+
+Only for languages: `.tsx`
+
+```tsx
+export const getStaticProps: GetStaticProps<…> = async () => {
+  const data: … = {};
+
+  return {
+    props: {
+      ...data,
+    },
+  };
+};
+```
+
 ### Common
 
 | Trigger  | Content                                   | Only for languages |
@@ -72,26 +152,6 @@ environment in [VS Code](https://code.visualstudio.com/).
 | `useRouter⇥`      | create `useRouter` hook                                                            |
 | `useState⇥`       | create `useState` hook                                                             |
 | `useTranslation⇥` | create `useTranslation` hook (part of [react.i18next](https://react.i18next.com/)) |
-
-### React Components
-
-#### `rfc⇥`
-
-Creates a React Functional Component
-
-Only for languages: `.tsx`
-
-```.tsx
-type MyDynamicComponentNameProps = { … }
-
-export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps): JSX.Element => {
-  return (
-    <div>$0</div>
-  )
-}
-
-export default MyDynamicComponentName
-```
 
 ## Snippets List for Markdown
 
