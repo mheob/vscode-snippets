@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Use json as file extension for the source snippets files
+
 ### Fixed
 
 - Add missing return type to the React Function Component in the readme
