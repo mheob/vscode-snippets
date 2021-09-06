@@ -2,6 +2,7 @@
 
 [![Version](https://vsmarketplacebadge.apphb.com/version-short/mheob.vscode-snippets.svg?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)](https://marketplace.visualstudio.com/items?itemName=mheob.vscode-snippets)
 [![GitHub issues](https://img.shields.io/github/issues/mheob/vscode-snippets?logo=github&style=for-the-badge)](https://github.com/mheob/vscode-snippets)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge)](https://gitmoji.dev)
 
 This extension provides you Snippets for the development with Next.js, React in a TypeScript
 environment in [VS Code](https://code.visualstudio.com/).
