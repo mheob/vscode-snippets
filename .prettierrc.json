@@ -6,7 +6,8 @@
     {
       "files": "*.md",
       "options": {
-        "parser": "markdown"
+        "parser": "markdown",
+        "printWidth": 9999
       }
     }
   ]
