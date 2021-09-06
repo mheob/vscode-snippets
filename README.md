@@ -37,66 +37,6 @@ export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps): JS
 export default MyDynamicComponentName
 ```
 
-#### `getServerSideProps⇥`
-
-Adds the `getServerSideProps` function
-
-Only for languages: `.tsx`
-
-```tsx
-export const getServerSideProps: GetServerSideProps<…> = async (context) => {
-  const data: … = {};
-
-  if (!data) {
-    return {
-      notFound: true,
-    }
-  }
-
-  return {
-    props: {
-      ...data,
-    },
-  };
-};
-```
-
-#### `getStaticPaths⇥`
-
-Adds the `getStaticPaths` function
-
-Only for languages: `.tsx`
-
-```tsx
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [
-      {
-        params: {},
-      },
-    ],
-  };
-};
-```
-
-#### `getStaticProps⇥`
-
-Adds the `getStaticProps` function
-
-Only for languages: `.tsx`
-
-```tsx
-export const getStaticProps: GetStaticProps<…> = async () => {
-  const data: … = {};
-
-  return {
-    props: {
-      ...data,
-    },
-  };
-};
-```
-
 ### Common
 
 | Trigger  | Content                                   | Only for languages |
@@ -138,6 +78,14 @@ export const getStaticProps: GetStaticProps<…> = async () => {
 | `arrowFunctionInline⇥` | creates an anonymous function `(…) => …`                 |
 | `setInterval⇥`         | set interval helper method `setInterval(() => { … }, …)` |
 | `setTimeout⇥`          | set timeout helper method `setTimeout(() => { … }, …)`   |
+
+### Next.js Functions
+
+| Trigger               | Content                                                    | Only for languages |
+| :-------------------- | :--------------------------------------------------------- | :----------------- |
+| `getServerSideProps⇥` | creates the Next.js specific `getServerSideProps` function | `.tsx`             |
+| `getStaticPaths⇥`     | creates the Next.js specific `getStaticPaths` function     | `.tsx`             |
+| `getStaticProps⇥`     | creates the Next.js specific `getStaticProps` function     | `.tsx`             |
 
 ### React Hooks
 
