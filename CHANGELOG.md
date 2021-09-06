@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-- Nothing
+### Changed
+
+- Small snippet improvements to reach a better user experience
 
 ## [1.1.0] - 2021-09-03
 

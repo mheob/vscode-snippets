@@ -1,7 +1,7 @@
 {
   "useCallback hook": {
     "prefix": "useCallback",
-    "body": ["useCallback$0(() => {", "\t${1:callback}", "}, [${2:input}])"],
+    "body": ["useCallback$0(() => {", "\t${1:callback}", "}, [${2:dependencies}])"],
     "description": "useCallback hook"
   },
   "useContext hook": {
@@ -16,7 +16,7 @@
   },
   "useMemo hook": {
     "prefix": "useMemo",
-    "body": ["useMemo$0(() => ${1:function}, ${2:input})"],
+    "body": ["useMemo$0(() => ${1:function}, [${2:dependencies}])"],
     "description": "useMemo hook"
   },
   "useReducer hook": {
