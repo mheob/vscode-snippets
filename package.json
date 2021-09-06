@@ -1,7 +1,7 @@
 {
   "name": "vscode-snippets",
   "displayName": "Snippets for Next.js, React in TypeScript",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Snippets for the development with Next.js, React in a TypeScript environment.",
   "categories": [
     "Snippets"
