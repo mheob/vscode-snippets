@@ -1,7 +1,18 @@
 {
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
   "markdownlint.config": {
     "default": true,
     "MD024": false,
     "MD033": false
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

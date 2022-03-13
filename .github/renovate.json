@@ -1,0 +1,8 @@
+{
+  "extends": ["config:base", ":preserveSemverRanges", "group:allNonMajor"],
+  "assignees": ["mheob"],
+  "reviewers": ["mheob"],
+  "labels": ["dependencies"],
+  "schedule": ["before 3am on Friday"],
+  "npm": { "stabilityDays": 5 }
+}
