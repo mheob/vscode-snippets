@@ -7,7 +7,7 @@
 ### Changed
 
 - Small snippet improvements to reach a better user experience [[#16](https://github.com/mheob/vscode-snippets/pull/16)]
-- Move Next.js function documentaion into a table view [[#17](https://github.com/mheob/vscode-snippets/pull/17)]
+- Move Next.js function documentation into a table view [[#17](https://github.com/mheob/vscode-snippets/pull/17)]
 
 ## [1.1.0] - 2021-09-03
 
