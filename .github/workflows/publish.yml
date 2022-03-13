@@ -15,13 +15,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: npm
+          node-version: lts/*
+          cache: yarn
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --immutable
 
       - name: Publish to VS Code Marketplace
-        run: npm run deploy
+        run: yarn deploy
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
