@@ -1,8 +1,7 @@
-import { readFile, readdir } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
-
-import { CODE_SNIPPETS_EXTENSION } from './constants';
-import { Snippet } from './types';
+import { CODE_SNIPPETS_EXTENSION, OUTPUT_DIRECTORY } from './constants';
+import type { Snippet } from './types';
 
 /**
  * Get list if files paths based on directory
@@ -49,4 +48,14 @@ export const getSnippetsFromFolder = async (
   );
 
   return snippetsObject;
+};
+
+/**
+ * Write the snippets to the output file
+ *
+ * @param file Filename with extension
+ * @param snippetObject Object with all snippets
+ */
+export const writeSnippetFile = async (file: string, snippetObject: Record<string, Snippet>) => {
+  writeFile(`${OUTPUT_DIRECTORY}/${file}`, JSON.stringify({ ...snippetObject }));
 };
