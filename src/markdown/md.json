@@ -33,5 +33,10 @@
     "prefix": "mdCode",
     "body": ["```${1:enter type}", "${2:enter code}", "```$0"],
     "description": "Markdown code block"
+  },
+  "Markdown ToDo list item": {
+    "prefix": "mdTodo",
+    "body": ["- [${2:x}] ${1:enter ToDo}$0"],
+    "description": "Markdown ToDo list item"
   }
 }

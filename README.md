@@ -110,3 +110,4 @@ export default MyDynamicComponentName
 | `mdLinkWithTitle⇥`        | insert a link with a title attribute         |
 | `mdLinkedImage⇥`          | insert a linked image                        |
 | `mdLinkedImageWithTitle⇥` | insert a linked image with a title attribute |
+| `mdTodo⇥`                 | insert a ToDo list item                      |
