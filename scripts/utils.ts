@@ -56,6 +56,6 @@ export const getSnippetsFromFolder = async (
  * @param file Filename with extension
  * @param snippetObject Object with all snippets
  */
-export const writeSnippetFile = async (file: string, snippetObject: Record<string, Snippet>) => {
+export const writeSnippetFile = (file: string, snippetObject: Record<string, Snippet>) => {
   writeFile(`${OUTPUT_DIRECTORY}/${file}`, JSON.stringify({ ...snippetObject }));
 };
