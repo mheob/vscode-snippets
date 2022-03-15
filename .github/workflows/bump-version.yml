@@ -38,7 +38,7 @@ jobs:
           git config user.email '3983539+mheob@users.noreply.github.com'
 
       - name: Bump version
-        run: yarn version --${{ github.event.inputs.version }}
+        run: yarn version ${{ github.event.inputs.version }}
 
       - name: Push latest version
         run: git push origin main --follow-tags
