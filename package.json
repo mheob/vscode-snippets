@@ -33,7 +33,6 @@
     "format": "prettier --write **/*.{ts,json,md,yml} --ignore-path .gitignore",
     "postinstall": "husky install",
     "lint": "eslint . --ext .ts",
-    "postversion": "git add . && git commit -m \":bookmark: Release $npm_package_version\"",
     "vscode:prepublish": "yarn build"
   },
   "contributes": {

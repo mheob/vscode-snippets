@@ -39,4 +39,7 @@ jobs:
         run: yarn version ${{ github.event.inputs.version }}
 
       - name: Push latest version
-        run: git push origin main --follow-tags
+        run: |
+          git add .
+          git commit -m \":bookmark: Release new version\"
+          git push origin main --follow-tags
