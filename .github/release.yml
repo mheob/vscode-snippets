@@ -1,0 +1,38 @@
+changelog:
+  exclude:
+    labels:
+      - ci/cd
+      - configuration error
+      - github_actions
+      - stale
+
+  categories:
+    - title: 💥 Breaking Changes
+      labels:
+        - Semver-Major
+        - breaking-change
+
+    - title: ✨ Exciting New Features
+      labels:
+        - Semver-Minor
+        - feature
+
+    - title: 🐛 Fixes
+      labels:
+        - Semver-Patch
+        - bug
+        - security fix
+
+    - title: 🐛 Changes
+      labels:
+        - Semver-Patch
+        - update
+
+    - title: 📝 Documentation
+      labels:
+        - Semver-Patch
+        - documentation
+
+    - title: Other Changes
+      labels:
+        - '*'
