@@ -1,9 +1,9 @@
-name: Create Release
+name: Publish Extension
 
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types:
+      - created
 
 jobs:
   publish:
@@ -27,17 +27,3 @@ jobs:
         run: yarn deploy
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-
-  create-github-release:
-    name: Create GitHub Release
-    runs-on: ubuntu-latest
-    needs: publish
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Create Release
-        run: gh release create ${{ github.ref }} --generate-notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
