@@ -1,0 +1,37 @@
+changelog:
+  exclude:
+    labels:
+      - ci/cd
+      - configuration
+      - github_actions
+      - stale
+
+  categories:
+    - title: Breaking Changes
+      labels:
+        - breaking-change
+
+    - title: Exciting New Features
+      labels:
+        - feature
+
+    - title: Fixes
+      labels:
+        - bug
+        - security fix
+
+    - title: Changes
+      labels:
+        - update
+
+    - title: Documentation
+      labels:
+        - documentation
+
+    - title: Dependencies
+      labels:
+        - dependencies
+
+    - title: Other Changes
+      labels:
+        - '*'
