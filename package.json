@@ -66,25 +66,25 @@
     "yarn.lock": "yarn dedupe"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
-    "eslint": "^8.11.0",
+    "@types/node": "^17.0.29",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^41.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.6",
-    "prettier": "^2.6.0",
-    "prettier-plugin-jsdoc": "^0.3.31",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-jsdoc": "^0.3.38",
     "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.2",
+    "typescript": "^4.6.3",
     "vsce": "^2.7.0"
   },
+  "packageManager": "yarn@3.2.0",
   "engines": {
     "vscode": "^1.65.0"
   },
-  "icon": "images/logo.png",
-  "packageManager": "yarn@3.2.0"
+  "icon": "images/logo.png"
 }
