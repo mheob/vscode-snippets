@@ -9,6 +9,6 @@ hasChanged() {
   echo "$changedFiles" | grep -q "$1"
 }
 
-if hasChanged 'yarn.lock'; then
-  yarn
+if hasChanged 'pnpm-lock.yaml'; then
+  pnpm i
 fi
