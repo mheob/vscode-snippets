@@ -25,15 +25,13 @@
   "license": "MIT",
   "publisher": "mheob",
   "scripts": {
-    "prebuild": "yarn clean",
-    "build": "ts-node scripts/generate-snippet-files.ts",
+    "build": "pnpm clean && ts-node scripts/generate-snippet-files.ts",
     "clean": "rimraf snippets",
-    "predeploy": "yarn build",
-    "deploy": "vsce publish --yarn --no-dependencies",
+    "deploy": "pnpm build && vsce package --no-dependencies",
     "format": "prettier --write **/*.{ts,json,md,yml} --ignore-path .gitignore",
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "lint": "eslint . --ext .ts",
-    "vscode:prepublish": "yarn build"
+    "vscode:prepublish": "pnpm build"
   },
   "contributes": {
     "snippets": [
@@ -60,29 +58,27 @@
     ]
   },
   "lint-staged": {
-    "**/*.{ts,json,md,yml}": "yarn format",
+    "**/*.{ts,json,md,yml}": "pnpm format",
     "**/*.ts": "eslint --fix",
-    "package.json": "yarn dlx sort-package-json",
-    "yarn.lock": "yarn dedupe"
+    "package.json": "pnpm dlx sort-package-json"
   },
   "devDependencies": {
-    "@types/node": "^17.0.29",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
-    "@typescript-eslint/parser": "^5.21.0",
-    "eslint": "^8.14.0",
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^42.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.2",
     "prettier": "^2.6.2",
     "prettier-plugin-jsdoc": "^0.3.38",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3",
-    "vsce": "^2.7.0"
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2",
+    "vsce": "^2.8.0"
   },
-  "packageManager": "yarn@3.2.0",
   "engines": {
     "vscode": "^1.65.0"
   },
