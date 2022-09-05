@@ -37,36 +37,34 @@ export default MyDynamicComponentName
 
 ### Common
 
-| Trigger  | Content                                   | Only for languages |
-| :------- | :---------------------------------------- | :----------------- |
-| `dtid⇥`  | adds `data-testid="…"`                    | `.jsx`, `.tsx`     |
-| `forIn⇥` | for ... in loop `for(const … in …) { … }` |                    |
-| `forOf⇥` | for ... of loop `for(const … of …) { … }` |                    |
+| Trigger | Content                | Only for languages |
+| :------ | :--------------------- | :----------------- |
+| `dtid⇥` | adds `data-testid="…"` | `.jsx`, `.tsx`     |
 
 ### Console
 
-| Trigger         | Content                          |
-| :-------------- | :------------------------------- |
-| `consoleError⇥` | console error `console.error(…)` |
-| `consoleInfo⇥`  | console info `console.info(…)`   |
-| `consoleLog⇥`   | console log `console.log(…)`     |
-| `consoleWarn⇥`  | console warn `console.warn(…)`   |
+| Trigger      | Content                          |
+| :----------- | :------------------------------- |
+| `consError⇥` | console error `console.error(…)` |
+| `consInfo⇥`  | console info `console.info(…)`   |
+| `consLog⇥`   | console log `console.log(…)`     |
+| `consWarn⇥`  | console warn `console.warn(…)`   |
 
 ### Export and Import
 
-| Trigger               | Content                                                         | Only for languages |
-| :-------------------- | :-------------------------------------------------------------- | :----------------- |
-| `exportAllFrom⇥`      | exports all from module `export * from '…'`                     |                    |
-| `exportAs⇥`           | exports all as alias from module `export … as … from '…'`       |                    |
-| `exportConst⇥`        | exports const `export const … = …`                              |                    |
-| `exportDefault⇥`      | exports default `export default …`                              |                    |
-| `importFrom⇥`         | imports entire module `import … from '…'`                       |                    |
-| `importAllFrom⇥`      | imports all as alias from module `import … as … from '…'`       |                    |
-| `importDestructured⇥` | imports only destructed part of module `import { … } from '…'`  |                    |
-| `importFileOnly⇥`     | imports entire module without module name `import '…'`          |                    |
-| `importReact⇥`        | import the `React` module `import React from 'react'`           | `.jsx`, `.tsx`     |
-| `importReactDom⇥`     | import the `ReactDOM` module `import ReactDOM from 'react-dom'` | `.jsx`, `.tsx`     |
-| `importType⇥`         | import only the type from module `import type { … } from '…'`   | `.ts`, `.tsx`      |
+| Trigger            | Content                                                         | Only for languages |
+| :----------------- | :-------------------------------------------------------------- | :----------------- |
+| `expAllFrom⇥`      | exports all from module `export * from '…'`                     |                    |
+| `expAs⇥`           | exports all as alias from module `export … as … from '…'`       |                    |
+| `expConst⇥`        | exports const `export const … = …`                              |                    |
+| `exportDefault⇥`   | exports default `export default …`                              |                    |
+| `impFrom⇥`         | imports entire module `import … from '…'`                       |                    |
+| `impAllFrom⇥`      | imports all as alias from module `import … as … from '…'`       |                    |
+| `impDestructured⇥` | imports only destructed part of module `import { … } from '…'`  |                    |
+| `impFileOnly⇥`     | imports entire module without module name `import '…'`          |                    |
+| `impReact⇥`        | import the `React` module `import React from 'react'`           | `.jsx`, `.tsx`     |
+| `impReactDom⇥`     | import the `ReactDOM` module `import ReactDOM from 'react-dom'` | `.jsx`, `.tsx`     |
+| `impType⇥`         | import only the type from module `import type { … } from '…'`   | `.ts`, `.tsx`      |
 
 ### Functions
 
@@ -87,17 +85,16 @@ export default MyDynamicComponentName
 
 ### React Hooks
 
-| Trigger           | Hook                                                                               |
-| :---------------- | :--------------------------------------------------------------------------------- |
-| `useCallback⇥`    | create `useCallback` hook                                                          |
-| `useContext⇥`     | create `useContext` hook                                                           |
-| `useEffect⇥`      | create `useEffect` hook                                                            |
-| `useMemo⇥`        | create `useMemo` hook                                                              |
-| `useReducer⇥`     | create `useReducer` hook                                                           |
-| `useRef⇥`         | create `useRef` hook                                                               |
-| `useRouter⇥`      | create `useRouter` hook                                                            |
-| `useState⇥`       | create `useState` hook                                                             |
-| `useTranslation⇥` | create `useTranslation` hook (part of [react.i18next](https://react.i18next.com/)) |
+| Trigger        | Hook                      |
+| :------------- | :------------------------ |
+| `useCallback⇥` | create `useCallback` hook |
+| `useContext⇥`  | create `useContext` hook  |
+| `useEffect⇥`   | create `useEffect` hook   |
+| `useMemo⇥`     | create `useMemo` hook     |
+| `useReducer⇥`  | create `useReducer` hook  |
+| `useRef⇥`      | create `useRef` hook      |
+| `useRouter⇥`   | create `useRouter` hook   |
+| `useState⇥`    | create `useState` hook    |
 
 ## Snippets List for Markdown
 

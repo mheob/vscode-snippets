@@ -1,4 +1,5 @@
 import { mkdir, rm } from 'node:fs/promises';
+
 import {
   JS_FILE_NAME,
   JS_REACT_FILE_NAME,
@@ -14,7 +15,8 @@ import {
 } from './constants';
 import { getSnippetsFromFolder, writeSnippetFile } from './utils';
 
-const generateSnippetFiles = async () => {
+/** Generate snippets files. */
+const generateSnippetFiles = async (): Promise<void> => {
   await rm(OUTPUT_DIRECTORY, { recursive: true, force: true });
   await mkdir(OUTPUT_DIRECTORY);
 

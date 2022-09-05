@@ -38,10 +38,5 @@
     "prefix": "useState",
     "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$0(${2:initialState})",
     "description": "useState hook"
-  },
-  "useTranslation hook": {
-    "prefix": "useTranslation",
-    "body": "const { t } = useTranslation$0('${1}')",
-    "description": "useTranslation hook"
   }
 }
