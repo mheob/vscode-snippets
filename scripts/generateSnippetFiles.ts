@@ -1,4 +1,5 @@
 import { mkdir, rm } from 'node:fs/promises';
+
 import {
   JS_FILE_NAME,
   JS_REACT_FILE_NAME,

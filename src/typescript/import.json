@@ -1,6 +1,6 @@
 {
   "Import Type": {
-    "prefix": "importType",
+    "prefix": "impType",
     "body": "import type { ${2} } from '${1:module}'$0",
     "description": "Import Type"
   }

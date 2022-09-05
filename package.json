@@ -1,7 +1,7 @@
 {
   "name": "vscode-snippets",
   "displayName": "Snippets for Next.js, React in TypeScript",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Snippets for the development with Next.js, React in a TypeScript environment.",
   "categories": [
@@ -25,9 +25,9 @@
   "license": "MIT",
   "publisher": "mheob",
   "scripts": {
-    "build": "pnpm clean && ts-node scripts/generate-snippet-files.ts",
+    "build": "pnpm clean && ts-node scripts/generateSnippetFiles.ts",
     "clean": "rimraf snippets",
-    "deploy": "pnpm build && vsce package --no-dependencies",
+    "deploy": "pnpm build && pnpm exec vsce package --no-dependencies",
     "format": "prettier --write **/*.{ts,json,md,yml} --ignore-path .gitignore",
     "lint": "eslint . --ext .ts",
     "prepare": "husky install",
