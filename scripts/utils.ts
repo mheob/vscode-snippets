@@ -21,7 +21,7 @@ export const getAllFilesInDirection = async (directoryPath: string): Promise<str
  * @param filesPaths List of paths to files
  * @returns List of content of each file
  */
-export const getFilesContent = async (filesPaths: string[]): Promise<string[]> => {
+export const getFilesContent = (filesPaths: string[]): Promise<string[]> => {
   return Promise.all(
     filesPaths.map(async (filePath) => {
       const fileContent = await readFile(filePath);
@@ -57,6 +57,9 @@ export const getSnippetsFromFolder = async (
  * @param file Filename with extension
  * @param snippetObject Object with all snippets
  */
-export const writeSnippetFile = (file: string, snippetObject: Record<string, Snippet>) => {
+export const writeSnippetFile = (
+  file: string,
+  snippetObject: Record<string, Snippet>,
+): Promise<void> => {
   return writeFile(`${OUTPUT_DIRECTORY}/${file}`, JSON.stringify({ ...snippetObject }));
 };

@@ -15,7 +15,8 @@ import {
 } from './constants';
 import { getSnippetsFromFolder, writeSnippetFile } from './utils';
 
-const generateSnippetFiles = async () => {
+/** Generate snippets files. */
+const generateSnippetFiles = async (): Promise<void> => {
   await rm(OUTPUT_DIRECTORY, { recursive: true, force: true });
   await mkdir(OUTPUT_DIRECTORY);
 
