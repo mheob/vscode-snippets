@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@mheob/eslint-config": "^2.1.0",
-    "@mheob/prettier-config": "^1.4.0",
+    "@mheob/prettier-config": "^2.0.0",
     "@types/node": "^18.7.14",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
