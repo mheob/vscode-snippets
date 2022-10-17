@@ -1,23 +1,19 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":preserveSemverRanges", "group:allNonMajor"],
-  "assignees": ["mheob"],
-  "reviewers": ["mheob"],
-  "labels": ["dependencies"],
-  "schedule": ["before 3am on Friday"],
-  "npm": { "stabilityDays": 5 },
-  "commitMessagePrefix": "⬆️",
-  "commitMessageAction": "Upgrade",
-  "packageRules": [
-    {
-      "updateTypes": ["pin"],
-      "commitMessagePrefix": "📌",
-      "commitMessageAction": "Pin"
-    },
-    {
-      "updateTypes": ["rollback"],
-      "commitMessagePrefix": "⬇️",
-      "commitMessageAction": "Downgrade"
-    }
-  ]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["local>mheob/.github:renovate-config"],
+	"schedule": ["before 3am on Friday"],
+	"commitMessagePrefix": "⬆️",
+	"commitMessageAction": "Upgrade",
+	"packageRules": [
+		{
+			"updateTypes": ["pin"],
+			"commitMessagePrefix": "📌",
+			"commitMessageAction": "Pin"
+		},
+		{
+			"updateTypes": ["rollback"],
+			"commitMessagePrefix": "⬇️",
+			"commitMessageAction": "Downgrade"
+		}
+	]
 }
