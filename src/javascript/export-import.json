@@ -1,42 +1,42 @@
 {
-  "Export * from": {
-    "prefix": "expAllFrom",
-    "body": ["export * from '${1:module}'$0"],
-    "description": "Export * from"
-  },
-  "Export As": {
-    "prefix": "expAs",
-    "body": ["export { ${2:originalName} as ${3:alias} } from '${1:module}'$0"],
-    "description": "Export As"
-  },
-  "Export Const": {
-    "prefix": "expConst",
-    "body": ["export const ${1:name} = ${2:value}$0"],
-    "description": "Export Const"
-  },
-  "Export Default": {
-    "prefix": "expDefault",
-    "body": ["export default $0"],
-    "description": "Export Default"
-  },
-  "Import": {
-    "prefix": "impFrom",
-    "body": "import ${2} from '${1:module}'$0",
-    "description": "Import"
-  },
-  "Import * from": {
-    "prefix": "impAllFrom",
-    "body": ["import { ${2:originalName} as ${3:alias} } from '${1:module}'$0"],
-    "description": "Import * from"
-  },
-  "Import Destructured": {
-    "prefix": "impDestructured",
-    "body": "import { ${2} } from '${1:module}'$0",
-    "description": "Import Destructured"
-  },
-  "Import File Only": {
-    "prefix": "impFileOnly",
-    "body": "import '${1:module}'$0",
-    "description": "Import File Only"
-  }
+	"Export * from": {
+		"prefix": "expAllFrom",
+		"body": ["export * from '${1:module}'$0"],
+		"description": "Export * from"
+	},
+	"Export As": {
+		"prefix": "expAs",
+		"body": ["export { ${2:originalName} as ${3:alias} } from '${1:module}'$0"],
+		"description": "Export As"
+	},
+	"Export Const": {
+		"prefix": "expConst",
+		"body": ["export const ${1:name} = ${2:value}$0"],
+		"description": "Export Const"
+	},
+	"Export Default": {
+		"prefix": "expDefault",
+		"body": ["export default $0"],
+		"description": "Export Default"
+	},
+	"Import": {
+		"prefix": "impFrom",
+		"body": "import ${2} from '${1:module}'$0",
+		"description": "Import"
+	},
+	"Import * from": {
+		"prefix": "impAllFrom",
+		"body": ["import { ${2:originalName} as ${3:alias} } from '${1:module}'$0"],
+		"description": "Import * from"
+	},
+	"Import Destructured": {
+		"prefix": "impDestructured",
+		"body": "import { ${2} } from '${1:module}'$0",
+		"description": "Import Destructured"
+	},
+	"Import File Only": {
+		"prefix": "impFileOnly",
+		"body": "import '${1:module}'$0",
+		"description": "Import File Only"
+	}
 }

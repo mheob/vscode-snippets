@@ -1,22 +1,22 @@
 {
-  "React functional component": {
-    "prefix": "rfc",
-    "body": [
-      "import { HTMLAttributes } from 'react';",
-      "",
-      "interface ${TM_FILENAME_BASE}Props extends HTMLAttributes<HTMLDivElement> {",
-      "\t${1:propertyTypeKey}: ${1:propertyTypeValue};",
-      "}",
-      "",
-      "export const ${TM_FILENAME_BASE} = ({ ${1:propertyTypeKey} }: ${TM_FILENAME_BASE}Props) => {",
-      "\treturn (",
-      "\t\t<div>$0</div>",
-      "\t);",
-      "};",
-      "",
-      "export default ${TM_FILENAME_BASE};",
-      ""
-    ],
-    "description": "React functional component"
-  }
+	"React functional component": {
+		"prefix": "rfc",
+		"body": [
+			"import { HTMLAttributes } from 'react';",
+			"",
+			"interface ${TM_FILENAME_BASE}Props extends HTMLAttributes<HTMLDivElement> {",
+			"\t${1:propertyTypeKey}: ${1:propertyTypeValue};",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE} = ({ ${1:propertyTypeKey} }: ${TM_FILENAME_BASE}Props) => {",
+			"\treturn (",
+			"\t\t<div>$0</div>",
+			"\t);",
+			"};",
+			"",
+			"export default ${TM_FILENAME_BASE};",
+			""
+		],
+		"description": "React functional component"
+	}
 }

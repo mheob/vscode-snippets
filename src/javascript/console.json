@@ -1,22 +1,22 @@
 {
-  "Console Error": {
-    "prefix": "consError",
-    "body": "console.error(${1:object})$0",
-    "description": "Displays an error message in the console and also includes a stack trace from where the method was called"
-  },
-  "Console Info": {
-    "prefix": "consInfo",
-    "body": "console.info(${1:object})$0",
-    "description": "Displays an info message in the console"
-  },
-  "Console Log": {
-    "prefix": "consLog",
-    "body": "console.log(${1:object})$0",
-    "description": "Displays a message in the console"
-  },
-  "Console Warn": {
-    "prefix": "consWarn",
-    "body": "console.warn(${1:object})$0",
-    "description": "Displays a warn message in the console"
-  }
+	"Console Error": {
+		"prefix": "consError",
+		"body": "console.error(${1:object})$0",
+		"description": "Displays an error message in the console and also includes a stack trace from where the method was called"
+	},
+	"Console Info": {
+		"prefix": "consInfo",
+		"body": "console.info(${1:object})$0",
+		"description": "Displays an info message in the console"
+	},
+	"Console Log": {
+		"prefix": "consLog",
+		"body": "console.log(${1:object})$0",
+		"description": "Displays a message in the console"
+	},
+	"Console Warn": {
+		"prefix": "consWarn",
+		"body": "console.warn(${1:object})$0",
+		"description": "Displays a warn message in the console"
+	}
 }

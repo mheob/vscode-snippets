@@ -1,5 +1,5 @@
 export declare type Snippet = {
-  body: string[] | string;
-  description?: string;
-  prefix: string;
+	body: string[] | string;
+	description?: string;
+	prefix: string;
 };
