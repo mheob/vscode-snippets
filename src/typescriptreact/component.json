@@ -4,17 +4,17 @@
 		"body": [
 			"import { HTMLAttributes } from 'react';",
 			"",
-			"interface ${TM_FILENAME_BASE}Props extends HTMLAttributes<HTMLDivElement> {",
+			"type ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props = HTMLAttributes<HTMLDivElement> & {",
 			"\t${1:propertyTypeKey}: ${1:propertyTypeValue};",
 			"}",
 			"",
-			"export const ${TM_FILENAME_BASE} = ({ ${1:propertyTypeKey} }: ${TM_FILENAME_BASE}Props) => {",
+			"const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = ({ ${1:propertyTypeKey} }: ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props) => {",
 			"\treturn (",
 			"\t\t<div>$0</div>",
 			"\t);",
 			"};",
 			"",
-			"export default ${TM_FILENAME_BASE};",
+			"export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};",
 			""
 		],
 		"description": "React functional component"

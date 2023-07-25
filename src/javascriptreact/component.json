@@ -1,0 +1,26 @@
+{
+	"React functional component": {
+		"prefix": "rfc",
+		"body": [
+			"import PropTypes from \"prop-types\"",
+			"",
+			"/**",
+			" * ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} component description displayed in storybook",
+			" */",
+			"const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = ({ children }) => {",
+			"\treturn (",
+			"\t\t<div>{children}${0}</div>",
+			"\t)",
+			"}",
+			"",
+			"${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}.propTypes = {",
+			"\t/** The main content */",
+			"\tchildren: PropTypes.node.isRequired,",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};",
+			""
+		],
+		"description": "React functional component"
+	}
+}
