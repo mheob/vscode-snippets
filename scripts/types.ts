@@ -1,4 +1,4 @@
-export declare type Snippet = {
+export type Snippet = {
 	body: string[] | string;
 	description?: string;
 	prefix: string;

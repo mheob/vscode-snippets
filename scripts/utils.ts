@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { CODE_SNIPPETS_EXTENSION, OUTPUT_DIRECTORY } from './constants';
