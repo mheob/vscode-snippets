@@ -63,7 +63,7 @@
 		"package.json": "pnpm dlx sort-package-json"
 	},
 	"devDependencies": {
-		"@mheob/eslint-config": "^5.2.0",
+		"@mheob/eslint-config": "^6.2.0",
 		"@mheob/prettier-config": "^3.3.3",
 		"@types/node": "^22.19.1",
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
