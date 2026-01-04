@@ -1,5 +1,5 @@
-export type Snippet = {
-	body: string[] | string;
+export interface Snippet {
+	body: string | string[];
 	description?: string;
 	prefix: string;
-};
+}

@@ -1,19 +1,19 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>mheob/renovate-config"],
-	"schedule": ["before 3am on Friday"],
-	"commitMessagePrefix": "⬆️",
 	"commitMessageAction": "Upgrade",
+	"commitMessagePrefix": "⬆️",
+	"extends": ["github>mheob/renovate-config"],
 	"packageRules": [
 		{
-			"matchUpdateTypes": ["pin"],
 			"commitMessagePrefix": "📌",
-			"commitMessageAction": "Pin"
+			"matchUpdateTypes": ["pin"],
+			"updateTypes": ["pin"]
 		},
 		{
-			"matchUpdateTypes": ["rollback"],
 			"commitMessagePrefix": "⬇️",
-			"commitMessageAction": "Downgrade"
+			"matchUpdateTypes": ["rollback"],
+			"updateTypes": ["rollback"]
 		}
-	]
+	],
+	"schedule": ["before 3am on Friday"]
 }

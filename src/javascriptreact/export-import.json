@@ -1,12 +1,12 @@
 {
 	"Import React": {
-		"prefix": "impReact",
 		"body": ["import React from 'react'", "$0"],
-		"description": "Import React"
+		"description": "Import React",
+		"prefix": "impReact"
 	},
 	"Import ReactDOM": {
-		"prefix": "impReactDom",
 		"body": ["import ReactDOM from 'react-dom'", "$0"],
-		"description": "Import ReactDOM"
+		"description": "Import ReactDOM",
+		"prefix": "impReactDom"
 	}
 }

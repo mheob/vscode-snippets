@@ -1,17 +1,31 @@
 {
-  "[typescript]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-  "[typescriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-  "markdownlint.config": {
-    "default": true,
-    "MD024": false,
-    "MD033": false
-  }
+	// Auto fix
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "never"
+	},
+
+	"editor.formatOnSave": false,
+	// Enable eslint for all supported languages
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"jsonc",
+		"html",
+		"markdown",
+		"toml",
+		"yaml",
+		"github-actions-workflow"
+	],
+	// Extensions
+	"markdownlint.config": {
+		"MD024": false,
+		"MD033": false,
+		"default": true
+	},
+	// Disable the default formatter, use eslint instead
+	"prettier.enable": false
 }

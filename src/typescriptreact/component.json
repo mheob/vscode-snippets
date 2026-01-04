@@ -1,10 +1,9 @@
 {
 	"React functional component": {
-		"prefix": "rfc",
 		"body": [
 			"import { HTMLAttributes } from 'react';",
 			"",
-			"type ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props = HTMLAttributes<HTMLDivElement> & {",
+			"interface ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props extends HTMLAttributes<HTMLDivElement> {",
 			"\t${1:propertyTypeKey}: ${1:propertyTypeValue};",
 			"}",
 			"",
@@ -17,6 +16,7 @@
 			"export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};",
 			""
 		],
-		"description": "React functional component"
+		"description": "React functional component",
+		"prefix": "rfc"
 	}
 }

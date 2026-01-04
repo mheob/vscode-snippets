@@ -1,7 +1,8 @@
 {
+	"publisher": "mheob",
 	"name": "vscode-snippets",
 	"displayName": "Snippets for Next.js, React in TypeScript",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"private": true,
 	"description": "Snippets for the development with Next.js, React in a TypeScript environment.",
 	"categories": [
@@ -14,6 +15,7 @@
 		"snippets",
 		"typescript"
 	],
+	"icon": "images/logo.png",
 	"homepage": "https://github.com/mheob/vscode-snippets#readme",
 	"bugs": {
 		"url": "https://github.com/mheob/vscode-snippets/issues"
@@ -23,13 +25,19 @@
 		"url": "https://github.com/mheob/vscode-snippets.git"
 	},
 	"license": "MIT",
-	"publisher": "mheob",
+	"type": "module",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"images",
+		"package.json",
+		"snippets"
+	],
 	"scripts": {
-		"build": "pnpm clean && ts-node scripts/generateSnippetFiles.ts",
+		"build": "pnpm clean && tsx scripts/generate-snippet-files.ts",
 		"clean": "rimraf snippets",
 		"deploy": "pnpm exec vsce package --no-dependencies",
-		"format": "prettier --write **/*.{ts,json,md,yml} --ignore-path .gitignore",
-		"lint": "eslint . --ext .ts",
+		"lint": "eslint .",
 		"prepare": "husky install",
 		"vscode:prepublish": "pnpm build"
 	},
@@ -58,29 +66,36 @@
 		]
 	},
 	"lint-staged": {
-		"**/*.{ts,json,md,yml}": "pnpm format",
-		"**/*.ts": "eslint --fix",
-		"package.json": "pnpm dlx sort-package-json"
+		"**/*.{ts,json,md,yml}": "prettier --write",
+		"**/*.ts": "eslint --fix"
 	},
 	"devDependencies": {
-		"@mheob/eslint-config": "^5.2.0",
-		"@mheob/prettier-config": "^3.3.3",
-		"@types/node": "^22.19.1",
-		"@typescript-eslint/eslint-plugin": "^7.18.0",
-		"@typescript-eslint/parser": "^7.18.0",
-		"@vscode/vsce": "^2.32.0",
-		"eslint": "^8.57.1",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.5.2",
-		"prettier": "^3.6.2",
-		"rimraf": "^5.0.10",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.8.3"
+		"@mheob/eslint-config": "^9.1.0",
+		"@mheob/prettier-config": "^3.5.0",
+		"@types/node": "^24.10.4",
+		"@typescript-eslint/eslint-plugin": "^8.51.0",
+		"@typescript-eslint/parser": "^8.51.0",
+		"@vscode/vsce": "^3.7.1",
+		"eslint": "^9.39.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
+		"prettier": "^3.7.4",
+		"rimraf": "^6.1.2",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
 	},
+	"packageManager": "pnpm@10.27.0",
 	"engines": {
 		"vscode": "^1.102.1"
 	},
-	"icon": "images/logo.png",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@vscode/vsce-sign",
+			"esbuild",
+			"keytar",
+			"unrs-resolver"
+		]
+	},
 	"sponsor": {
 		"url": "https://github.com/sponsors/mheob"
 	}

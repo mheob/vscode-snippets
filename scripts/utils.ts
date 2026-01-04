@@ -1,5 +1,5 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import path from 'node:path';
 
 import { CODE_SNIPPETS_EXTENSION, OUTPUT_DIRECTORY } from './constants';
 import type { Snippet } from './types';
@@ -12,7 +12,7 @@ import type { Snippet } from './types';
  */
 export const getAllFilesInDirection = async (directoryPath: string): Promise<string[]> => {
 	const files = await readdir(directoryPath);
-	return files.map((file: string) => join(directoryPath, file));
+	return files.map((file: string) => path.join(directoryPath, file));
 };
 
 /**
@@ -23,7 +23,7 @@ export const getAllFilesInDirection = async (directoryPath: string): Promise<str
  */
 export const getFilesContent = (filesPaths: string[]): Promise<string[]> => {
 	return Promise.all(
-		filesPaths.map(async (filePath) => {
+		filesPaths.map(async filePath => {
 			const fileContent = await readFile(filePath);
 			return fileContent.toString();
 		}),
@@ -40,7 +40,7 @@ export const getSnippetsFromFolder = async (
 	folderPath: string,
 ): Promise<Record<string, Snippet>> => {
 	const filesPaths = await getAllFilesInDirection(folderPath);
-	const snippetFiles = filesPaths.filter((filePath) => filePath.endsWith(CODE_SNIPPETS_EXTENSION));
+	const snippetFiles = filesPaths.filter(filePath => filePath.endsWith(CODE_SNIPPETS_EXTENSION));
 	const snippetsContent = await getFilesContent(snippetFiles);
 
 	const snippetsObject = snippetsContent.reduce(
@@ -52,10 +52,11 @@ export const getSnippetsFromFolder = async (
 };
 
 /**
- * Write the snippets to the output file
+ * Write a snippet object to a file in the output directory as a JSON file.
  *
- * @param file Filename with extension
- * @param snippetObject Object with all snippets
+ * @param file - The name of the output file (should include .json extension).
+ * @param snippetObject - An object containing VS Code snippet definitions, keyed by snippet name.
+ * @returns A Promise that resolves when the file has been written.
  */
 export const writeSnippetFile = (
 	file: string,
