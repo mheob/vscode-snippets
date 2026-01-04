@@ -8,6 +8,6 @@ Create a Pull Request to the `main` branch:
 - the description is organized in "Summary", "Changes" and "Motivation"
 - add the scope as a label (e.g. `frontend 🖥️`, `studio 🗃️` or `deps 📦` etc.)
   - collect the available list from the GitHub repository
-  - multiple label are possible
+  - multiple labels are possible
 
 Please omit mention Claude as author and generator.
