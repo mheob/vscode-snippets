@@ -6,13 +6,11 @@
 	"packageRules": [
 		{
 			"commitMessagePrefix": "📌",
-			"matchUpdateTypes": ["pin"],
-			"updateTypes": ["pin"]
+			"matchUpdateTypes": ["pin"]
 		},
 		{
 			"commitMessagePrefix": "⬇️",
-			"matchUpdateTypes": ["rollback"],
-			"updateTypes": ["rollback"]
+			"matchUpdateTypes": ["rollback"]
 		}
 	],
 	"schedule": ["before 3am on Friday"]
