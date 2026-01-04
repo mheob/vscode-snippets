@@ -1,22 +1,22 @@
 {
 	"Arrow Function": {
-		"prefix": "arrowFunction",
 		"body": ["const ${1:functionName} = (${2:variable}) => $0"],
-		"description": "Arrow Function"
+		"description": "Arrow Function",
+		"prefix": "arrowFunction"
 	},
 	"Arrow Function Inline": {
-		"prefix": "arrowFunctionInline",
 		"body": ["(${1:variable}) => $0"],
-		"description": "Arrow Function Inline"
+		"description": "Arrow Function Inline",
+		"prefix": "arrowFunctionInline"
 	},
 	"Set Interval Function": {
-		"prefix": "setInterval",
 		"body": ["setInterval(() => {", "\t$0", "}, ${1:intervalInMs})", ""],
-		"description": "Executes the given function at specified intervals"
+		"description": "Executes the given function at specified intervals",
+		"prefix": "setInterval"
 	},
 	"Set Timeout Function": {
-		"prefix": "setTimeout",
 		"body": ["setTimeout(() => {", "\t$0", "}, ${1:delayInMs})", ""],
-		"description": "Executes the given function after the specified delay"
+		"description": "Executes the given function after the specified delay",
+		"prefix": "setTimeout"
 	}
 }

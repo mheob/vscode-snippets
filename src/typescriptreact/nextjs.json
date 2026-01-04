@@ -1,6 +1,5 @@
 {
 	"Add getServerSideProps function": {
-		"prefix": "getServerSideProps",
 		"body": [
 			"export const getServerSideProps: GetServerSideProps$0<${1:InsertPageProps}> = async (context) => {",
 			"  const data: ${1:InsertPageProps} = {}",
@@ -19,10 +18,10 @@
 			"}",
 			""
 		],
-		"description": "Add getServerSideProps function"
+		"description": "Add getServerSideProps function",
+		"prefix": "getServerSideProps"
 	},
 	"Add getStaticPaths function": {
-		"prefix": "getStaticPaths",
 		"body": [
 			"export const getStaticPaths: GetStaticPaths$0 = async () => {",
 			"  return {",
@@ -35,10 +34,10 @@
 			"}",
 			""
 		],
-		"description": "Add getStaticPaths function"
+		"description": "Add getStaticPaths function",
+		"prefix": "getStaticPaths"
 	},
 	"Add getStaticProps function": {
-		"prefix": "getStaticProps",
 		"body": [
 			"export const getStaticProps: GetStaticProps$0<${1:InsertPageProps}> = async () => {",
 			"  const data: ${1:InsertPageProps} = {}",
@@ -51,6 +50,7 @@
 			"}",
 			""
 		],
-		"description": "Add getStaticProps function"
+		"description": "Add getStaticProps function",
+		"prefix": "getStaticProps"
 	}
 }

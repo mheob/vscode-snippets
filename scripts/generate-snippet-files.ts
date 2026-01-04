@@ -17,7 +17,7 @@ import { getSnippetsFromFolder, writeSnippetFile } from './utils';
 
 /** Generate snippets files. */
 const generateSnippetFiles = async (): Promise<void> => {
-	await rm(OUTPUT_DIRECTORY, { recursive: true, force: true });
+	await rm(OUTPUT_DIRECTORY, { force: true, recursive: true });
 	await mkdir(OUTPUT_DIRECTORY);
 
 	const mdSnippetsObject = await getSnippetsFromFolder(MD_SNIPPETS_DIRECTORY);

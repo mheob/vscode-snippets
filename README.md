@@ -2,7 +2,8 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/mheob/vscode-snippets?logo=github&style=for-the-badge)](https://github.com/mheob/vscode-snippets)
 
-This extension provides you Snippets for the development with Next.js, React in a TypeScript environment in [VS Code](https://code.visualstudio.com/).
+This extension provides you Snippets for the development with Next.js, React in a TypeScript environment in
+[VS Code](https://code.visualstudio.com/).
 
 ## Supported languages (file extensions)
 
@@ -24,15 +25,15 @@ Creates a React Functional Component
 Only for languages: `.tsx`
 
 ```tsx
-type MyDynamicComponentNameProps = { … }
-
-export const MyDynamicComponentName = ({ … }: MyDynamicComponentNameProps): JSX.Element => {
-  return (
-    <div>$0</div>
-  )
+interface MyDynamicComponentNameProps {
+	test: string;
 }
 
-export default MyDynamicComponentName
+export const MyDynamicComponentName = ({ test }: MyDynamicComponentNameProps): JSX.Element => {
+	return <div>$0</div>;
+};
+
+export default MyDynamicComponentName;
 ```
 
 ### Common
@@ -108,3 +109,11 @@ export default MyDynamicComponentName
 | `mdLinkedImage⇥`          | insert a linked image                        |
 | `mdLinkedImageWithTitle⇥` | insert a linked image with a title attribute |
 | `mdTodo⇥`                 | insert a ToDo list item                      |
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+[MIT](LICENSE)
