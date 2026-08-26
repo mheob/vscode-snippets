@@ -82,7 +82,7 @@
 		"prettier": "^3.7.4",
 		"rimraf": "^6.1.2",
 		"tsx": "^4.21.0",
-		"typescript": "^5.9.3"
+		"typescript": "^6.0.3"
 	},
 	"packageManager": "pnpm@10.27.0",
 	"engines": {
