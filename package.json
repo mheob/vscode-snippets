@@ -75,7 +75,7 @@
 		"@types/node": "^24.19.2",
 		"@typescript-eslint/eslint-plugin": "^8.71.1",
 		"@typescript-eslint/parser": "^8.71.1",
-		"@vscode/vsce": "^3.9.2",
+		"@vscode/vsce": "^4.0.0",
 		"eslint": "^9.39.5",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
