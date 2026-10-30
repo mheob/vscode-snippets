@@ -84,7 +84,7 @@
 		"tsx": "^4.23.15",
 		"typescript": "^5.9.3"
 	},
-	"packageManager": "pnpm@12.10.0",
+	"packageManager": "pnpm@12.16.1",
 	"engines": {
 		"vscode": "^1.102.1"
 	},
